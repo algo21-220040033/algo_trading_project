@@ -19,6 +19,7 @@ binance_trade
 + 当收盘价小于等于下轨时且持仓为0，买入1单位比特币
 + 当收盘价大于等于上轨时且持仓为1，卖出1单位比特币
 + 其他时候不做任何操作
++ 
 ![image](https://user-images.githubusercontent.com/80995891/117527872-bac72000-b001-11eb-93b0-0d81b0297367.png)
 
 ## GUI说明
