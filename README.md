@@ -4,7 +4,7 @@ binance_trade
 
 + 框架内有四份文件：Code文件夹、data文件夹、main.py
 + Code文件夹：Backtest.py
-+ data文件夹：data.csv，为比特币的K线数据
++ data文件夹：data.csv，为比特币的K线数据【由于上传限制，无法上传2018.1.1-2021.5.1全部数据，上传2020.1.1-2020.3.1数据为例】
 + main.py：回测框架运行文件
 
 ### 回测框架说明
