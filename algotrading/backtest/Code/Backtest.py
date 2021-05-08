@@ -64,6 +64,7 @@ class Portfolio:
         data['net'] =(1+data.close.pct_change(1).fillna(0) * data.weight.shift(1)).cumprod()
         data.index = data.datetime
         net = data['net']
+        net = net.fillna(1)
         return net
 
     def data_clean(self, data, net):
@@ -129,13 +130,17 @@ class Portfolio:
         plt.clf()
         plt.rcParams['font.sans-serif']=['SimHei']
         plt.rcParams['axes.unicode_minus'] = False
-        fig, ax = plt.subplots()
+        #fig, ax = plt.subplots()
         price.plot(figsize=(12,6),color = ['tab:red','tab:blue'],rot = 0,
                 linewidth=1.0)
-        plt.title('networth',size=15)
-        ax.set_ylabel('networth',size=15)
-        ax.set_xlabel('time',size=15)
+        plt.title('net-worth',size=15)
         plt.legend(loc='upper left')
+        ax = plt.axes()
+        x_axis = ax.axes.get_xaxis()
+        x_axis.set_label_text('time')
+        y_axis = ax.axes.get_yaxis()
+        y_axis.set_label_text('net-worth')
+        return True
         
     def backtest(self):
         data = self.data_read()
@@ -163,6 +168,7 @@ class Portfolio:
         print('The Information-Ratio is:', IR)
         
         self.output(data, net)
+        return True
         
         
         
