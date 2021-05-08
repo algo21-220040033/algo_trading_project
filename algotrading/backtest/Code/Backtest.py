@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Fri May  7 15:21:51 2021
 
-@author: Muffler
-"""
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -12,7 +8,7 @@ import pandas_ta as ta
 warnings.filterwarnings('ignore')
 
 class Portfolio:
-    def __init__(self, ann, fee_rate, rf,  input_path, file,n,window):
+    def __init__(self, ann, fee_rate, rf, input_path, file, n, window):
         self.ann = ann
         self.fee_rate = fee_rate
         self.rf = rf
@@ -30,8 +26,6 @@ class Portfolio:
     	return fee
 
     def strategy(self, data):
-        # n = 2 上下轨是几倍标准差
-        # window = 20移动
                 
         data = data.reset_index()
         
@@ -45,7 +39,7 @@ class Portfolio:
         
         data['flag'] = 0
         data['position'] = 0
-        data['cash'] = 10000
+        data['cash'] = 15000
         data['weight'] = 0
         position = 0
         
