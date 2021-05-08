@@ -1,0 +1,11 @@
+{
+    "class_name": "BollChannelStrategy",
+    "vt_symbol": "btcusdt.BINANCE",
+    "interval": "1m",
+    "rate": 0.0,
+    "slippage": 0.0,
+    "size": 0.0,
+    "pricetick": 1.0,
+    "capital": 10000.0,
+    "inverse": false
+}

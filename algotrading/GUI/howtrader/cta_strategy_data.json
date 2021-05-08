@@ -1,0 +1,19 @@
+{
+    "busdusdt_2": {
+        "pos": 0
+    },
+    "busdusdt_3": {
+        "pos": 0
+    },
+    "boll": {
+        "pos": 0,
+        "boll_up": 58076.07290859041,
+        "boll_down": 55340.03264696514,
+        "cci_value": 22.093140287851234,
+        "atr_value": 339.12020173897946,
+        "intra_trade_high": 57218.14,
+        "intra_trade_low": 56900.0,
+        "long_stop": 0,
+        "short_stop": 0
+    }
+}
